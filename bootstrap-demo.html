@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="Mitchell Cannon" />
+
+	<title>SlideCaptcha Demo</title>
+	
+	<!-- boostrap files -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	
+	<!-- required css -->
+	<link href="css/jquery.slidecaptcha.combined.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+		
+			<form method="post" action="check.php" class="form">
+				
+				<div class="form-group">
+					<label for="name" class="control-label">Your Name</label>
+					<input type="text" id="name" name="name" class="form-control" value="" placeholder="Your Name">
+				</div>
+				
+				<div class="form-group">
+					<div class="slidecaptcha"></div>
+				</div>
+				
+				<div class="form-group">
+					<button type="button" id="btn-submit" class="btn btn-primary">Submit</button>
+				</div>
+			</form>
+		
+		</div>
+	</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<script src="js/jquery.slidecaptcha.combined.min.js"></script>
+<script src="js/demo.js"></script>
+
+</body>
+</html>

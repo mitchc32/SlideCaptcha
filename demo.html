@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="Mitchell Cannon" />
+
+	<title>SlideCaptcha Demo</title>
+	
+	<link href="css/jquery.slidecaptcha.combined.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<form method="post" action="check.php">
+	
+	<ul>
+		<li class="text">
+			<label for="name">Your Name</label>
+			<input type="text" id="name" name="name" value="" placeholder="Your Name">
+		</li>
+		
+		<li class="slidecaptcha"></li>
+	</ul>
+	
+	<button type="button" id="btn-submit">Submit</button>
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/jquery.slidecaptcha.combined.min.js"></script>
+<script src="js/demo.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+.sc-instructions {
+	color: #333;
+}
+.sc-status {
+	font-weight: bold;
+	font-size: 1.25em;
+}
+.sc-locked .sc-status {
+	color: #D10505;
+}
+.sc-unlocked .sc-status {
+	color: #01DC10;
+}
+.sc-slider-container {
+	width: 200px;
+	padding: 12px;
+}
