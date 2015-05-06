@@ -1,6 +1,6 @@
 #SlideCaptcha 1.0.0
 
-A simple captcha alternative for jQuery 1.7+ and PHP 5.x
+A simple captcha alternative for jQuery 1.7+ and PHP 5.x using https://github.com/leongersen/noUiSlider/.
 
 ##Getting Started
 
