@@ -31,7 +31,7 @@ This package includes two working examples on how to use and implement SlideCapt
 Both demos have use the same class-based method of setting a SlideCaptcha HTML element. Here is an example:
 
 ```html
-<div class=”slidecaptcha”></div>
+<div class="slidecaptcha"></div>
 ```
 
 To initialize the plugin, use the following code:
@@ -55,7 +55,7 @@ Make sure that you start the session before calling this method.
 Include the class:
 
 ```php
-require_once __DIR__.’/SlideCaptcha.php’;
+require_once __DIR__.'/SlideCaptcha.php';
 ```
 
 To perform an unlock action, you simply need to call the unlock method:
