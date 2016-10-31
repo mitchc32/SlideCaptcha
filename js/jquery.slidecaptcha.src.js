@@ -26,7 +26,7 @@
 		this.$el.empty()
 			.append('<p class="sc-instructions">' + this.opts.lockedText + '</p>')
 			.append('<div class="sc-slider-container"><div class="sc-slider"></div></div>')
-			.append('<div class="sc-status">Locked</div>')
+			.append('<div class="sc-status">' + this.opts.lockedTitle + '</div>')
 			.addClass('sc-locked');
 		
 		/* scope the object reference for inside the events */
@@ -69,8 +69,11 @@
 		unlockParams: {},
 		lockedClass: 'sc-locked',
 		lockedText: 'This form is locked. Please drag or tap the slider below to unlock it.',
+        lockedTitle: 'Locked',
 		unlockedClass: 'sc-unlocked',
-		unlockedText: 'This form is unlocked!'
+		unlockedText: 'This form is unlocked!',
+        unlockedTitle: 'Unlocked',
+        unlockingTitle: 'Unlocking...'
 	};
 	
 	/* ===================================== */
@@ -90,7 +93,7 @@
 		var self = this;
 		
 		/* update the display */
-		this.$el.children('.sc-status').html('Unlocking...');
+		this.$el.children('.sc-status').html(this.opts.unlockingTitle);
 		
 		/* make the ajax request */
 		$.ajax(this.opts.unlockUrl, {
@@ -103,7 +106,7 @@
 			
 			/* update the text */
 			self.$el.children('.sc-instructions').html(self.opts.unlockedText);
-			self.$el.children('.sc-status').html('Unlocked!');
+			self.$el.children('.sc-status').html(self.opts.unlockedTitle);
 			
 			/* update the class */
 			self.$el.removeClass(self.opts.lockedClass).addClass(self.opts.unlockedClass);
@@ -133,7 +136,7 @@
 		
 		/* update the text */
 		this.$el.children('.sc-instructions').html(this.opts.lockedText);
-		this.$el.children('.sc-status').html('Locked');
+		this.$el.children('.sc-status').html(this.opts.lockedTitle);
 		
 		/* update the class */
 		this.$el.removeClass(this.opts.unlockedClass).addClass(this.opts.lockedClass);

@@ -86,5 +86,8 @@ The following options are available:
 * unlockParams - an object of additional parameters to send with the unlock request
 * lockedClass - the CSS class to apply when the slider is locked
 * lockedText - the instruction string displayed to the user
+* lockedTitle - slider status for locked state
 * unlockedClass - the CSS class to apply when the slider is unlocked
 * unlockedText - the instruction string displayed to the user when the slider is unlocked
+* unlockedTitle - slider status for unlocked state
+* unlockingTitle - slider status for unlocking state
